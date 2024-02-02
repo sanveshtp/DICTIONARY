@@ -8,18 +8,15 @@ dabba.addEventListener("keydown", (e) => {
         getdata(word)
         dabba.value = ''
         word = ''
-
-    } else if ("ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase().includes(e.key)) {
+    } else if ("abcdefghijklmnopqrstuvwxyz".includes(e.key)) {
         word += e.key
     }
 })
 
 let getdata = async (word) => {
-    let bd = document.body
     peddadabba.innerHTML = null;
     let response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     let data = await response.json()
-    // console.log(data);
     let cnt = 0
     while (cnt < 4) {
         if ((data[0].meanings[0].partOfSpeech) == undefined) {
@@ -121,5 +118,6 @@ let getdata = async (word) => {
 
 
     }
+
 
 }

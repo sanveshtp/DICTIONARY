@@ -7,6 +7,10 @@ body {
     background-color: deepskyblue;
 }
 
+h1 {
+    text-shadow: 4px 4px deeppink;
+}
+
 
 #envelope {
     display: flex;
@@ -43,7 +47,7 @@ body {
     font-family: fira code;
     border: 0px;
     background-color: black;
-    color: deeppink;
+    color: rgb(255, 255, 255);
 
 }
 
