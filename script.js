@@ -8,7 +8,7 @@ dabba.addEventListener("keydown", (e) => {
         getdata(word)
         dabba.value = ''
         word = ''
-    } else if ("abcdefghijklmnopqrstuvwxyz".includes(e.key)) {
+    } else if ("ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase().includes(e.key)) {
         word += e.key
     }
 })
