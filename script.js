@@ -90,11 +90,8 @@ let getdata = async (word) => {
 
     // ANTONYMS 0
     cnt = 0;
-    // console.log(cnt);
-
     console.log(data[0].meanings[0].antonyms.length);
     if (data[0].meanings[0].antonyms.length != 0 || data[0].meanings[1].antonyms.length != 0) {
-
         if (data[0].meanings[0].antonyms[1] != undefined) {
             peddadabba.innerHTML += `<b>Antonyms: </b>`
             while (cnt < 2) {
