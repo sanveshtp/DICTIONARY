@@ -17,7 +17,7 @@ let getdata = async (word) => {
     peddadabba.innerHTML = null;
     let response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     if (response.status > 400) {
-        peddadabba.innerHTML = "Sorry, there's no english word like that :(";
+        peddadabba.innerHTML = "Sorry cutie, there's no english word like that :(";
     } else {
         let data = await response.json()
         let cnt = 0
