@@ -29,13 +29,21 @@ let getdata = async (word) => {
         if (cnt < 3) {
             peddadabba.innerHTML += `<b>Definition ${String(cnt)}</b>: ${i.definition}<br>`
             cnt++
+        } else {
+            break
         }
     }
     peddadabba.innerHTML += `<b>Synonyms :</b>`
-    synonyms = data[0].meanings[0].synonyms
-    for (let i in synonyms) {
-        if (i < 2) {
-            peddadabba.innerHTML += `<br>${synonyms[i]}`
+    synonyms = data[0].meanings[0].synonymsc
+    cnt = 1
+    for (let i of synonyms) {
+        if (cnt < 2) {
+            peddadabba.innerHTML += `<br>${i}`
+            cnt++
+        } else {
+            break
         }
     }
+
+
 }
