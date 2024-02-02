@@ -4,11 +4,16 @@
 }
 
 body {
-    background-color: deepskyblue;
+    background-color: #A8DADC;
+    height: 100vh
 }
 
 h1 {
-    text-shadow: 4px 4px deeppink;
+    color: #1D3557;
+    text-shadow: 4px 4px #457B9D;
+    background-color: #F1FAEE;
+    padding: 0 2rem;
+    border: 2px solid #1D3557;
 }
 
 
@@ -18,11 +23,11 @@ h1 {
     justify-content: center;
     padding: 0.5em;
     border: 0.4em solid transparent;
-    background: linear-gradient(deepskyblue, deepskyblue) padding-box,
+    background: linear-gradient(#A8DADC, #A8DADC) padding-box,
         repeating-linear-gradient(-45deg,
-            black 0, black 12.5%,
+            #E63946 0, #E63946 12.5%,
             transparent 0, transparent 25%,
-            deeppink 0, deeppink 37.5%,
+            #1D3557 0, #1D3557 37.5%,
             transparent 0, transparent 50%) 0 / 8em 8em;
     background-color: none;
     font-family: fira code;
@@ -46,8 +51,8 @@ h1 {
     padding-left: 30px;
     font-family: fira code;
     border: 0px;
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: #A8DADC;
+    color: #457B9D;
 
 }
 
@@ -61,16 +66,20 @@ h1 {
     outline: none;
 }
 
+#dabba::placeholder {
+    color: #F1FAEE
+}
+
 #peddadabba {
     width: 30rem;
     height: auto;
     font-family: fira code;
     display: inline;
-    background-color: rgb(250, 27, 153);
+    background-color: #1D3557;
     padding: 3rem;
-    box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    box-shadow: 10px 10px 0px #E63946;
     border-radius: 10px;
-    /* color: white; */
+    color: #F1FAEE;
 }
 
 h3 {
@@ -78,7 +87,8 @@ h3 {
     height: auto;
     font-family: fira code;
     display: inline;
-    background-color: rgb(250, 27, 153);
+    color: #F1FAEE;
+    background-color: #1D3557;
     padding: 10px 3rem;
     margin: 0.9rem;
     border-radius: 10px;
@@ -90,3 +100,15 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
+/* #daddy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mummy {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+} */
